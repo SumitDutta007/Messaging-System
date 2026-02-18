@@ -15,12 +15,10 @@ const EmailForm = ({ onSuccess }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Sanitize input to prevent XSS
-    const sanitizedValue = value.trim();
-
+    // No trimming during typing - we'll trim on submit
     setFormData({
       ...formData,
-      [name]: sanitizedValue,
+      [name]: value,
     });
   };
 
@@ -55,7 +53,14 @@ const EmailForm = ({ onSuccess }) => {
 
     setSubmitting(true);
     try {
-      await emailAPI.create(formData);
+      // Trim values before submitting
+      const trimmedData = {
+        email_to: formData.email_to.trim(),
+        subject: formData.subject.trim(),
+        message: formData.message.trim(),
+      };
+      
+      await emailAPI.create(trimmedData);
       toast.success("Email record created successfully!");
       setFormData({ email_to: "", subject: "", message: "" });
       if (onSuccess) onSuccess();

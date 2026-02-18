@@ -35,10 +35,10 @@ const WhatsAppForm = ({ onSuccess }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    const sanitizedValue = value.trim();
+    // No trimming during typing - we'll trim on submit
     setFormData({
       ...formData,
-      [name]: sanitizedValue,
+      [name]: value,
     });
   };
 
@@ -56,7 +56,13 @@ const WhatsAppForm = ({ onSuccess }) => {
 
     setSubmitting(true);
     try {
-      await whatsappAPI.create(formData);
+      // Trim values before submitting
+      const trimmedData = {
+        mobile_number: formData.mobile_number.trim(),
+        message: formData.message.trim(),
+      };
+      
+      await whatsappAPI.create(trimmedData);
       toast.success("WhatsApp record created successfully!");
       setFormData({ mobile_number: "", message: "" });
       if (onSuccess) onSuccess();
