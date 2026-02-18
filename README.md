@@ -5,6 +5,7 @@
 A **production-grade**, **security-hardened** messaging management system built with **Python 3.11, Django 4.2.7, Django REST Framework 3.14.0** and React.js. This full-stack application demonstrates enterprise-level Python development practices with comprehensive security, validation, error handling, and cloud deployment capabilities.
 
 ### 🔥 **Tech Stack Highlights**
+
 - **Backend**: Python 3.11.9 + Django 4.2.7 + Django REST Framework 3.14.0
 - **Frontend**: React.js 18.2.0 with modern JavaScript
 - **Database**: PostgreSQL (Production) + SQLite (Development)
@@ -21,6 +22,7 @@ A **production-grade**, **security-hardened** messaging management system built 
 ## 🚀 Features
 
 ### � Python Django Backend Features
+
 - **Django 4.2.7**: Latest stable version with modern features
 - **Django REST Framework 3.14.0**: Professional API development toolkit
 - **Python 3.11.9**: Modern Python with type hints and performance improvements
