@@ -1,16 +1,38 @@
 # 📨 Messaging System - Production-Ready Full Stack Application
 
-A **production-grade**, **security-hardened** messaging management system built with React.js and Django REST Framework. This application demonstrates enterprise-level development practices with comprehensive security, validation, error handling, and cloud deployment capabilities.
+## 🐍 **Built with Python Django Backend + React Frontend**
 
-🌐 **[Live Demo](https://messaging-system-chi.vercel.app)** | 📚 [API Documentation](https://messaging-backend-xxxxx.onrender.com/api/)
+A **production-grade**, **security-hardened** messaging management system built with **Python 3.11, Django 4.2.7, Django REST Framework 3.14.0** and React.js. This full-stack application demonstrates enterprise-level Python development practices with comprehensive security, validation, error handling, and cloud deployment capabilities.
+
+### 🔥 **Tech Stack Highlights**
+- **Backend**: Python 3.11.9 + Django 4.2.7 + Django REST Framework 3.14.0
+- **Frontend**: React.js 18.2.0 with modern JavaScript
+- **Database**: PostgreSQL (Production) + SQLite (Development)
+- **Deployment**: Render (Python Backend) + Vercel (React Frontend)
+
+🌐 **[Live Demo](https://messaging-system-chi.vercel.app)** | 📚 [API Documentation](https://messaging-backend-xxxxx.onrender.com/api/) | 💻 [GitHub Repository](https://github.com/SumitDutta007/Messaging-System)
+
+---
 
 ## ✨ Key Highlights
 
-🏆 **Production-Ready** | 🔒 **Security-First** | ⚡ **Optimized Performance** | 📱 **Fully Responsive** | ♿ **Accessible (WCAG 2.1)** | 🚀 **Cloud Deployed**
+🐍 **Python Django Backend** | 🏆 **Production-Ready** | 🔒 **Security-First** | ⚡ **Optimized Performance** | 📱 **Fully Responsive** | ♿ **Accessible (WCAG 2.1)** | 🚀 **Cloud Deployed**
 
 ## 🚀 Features
 
-### 💼 Core Functionality
+### � Python Django Backend Features
+- **Django 4.2.7**: Latest stable version with modern features
+- **Django REST Framework 3.14.0**: Professional API development toolkit
+- **Python 3.11.9**: Modern Python with type hints and performance improvements
+- **Django ORM**: Efficient database queries with built-in SQL injection prevention
+- **Class-Based Views**: Clean ViewSets architecture for CRUD operations
+- **Serializers**: Data validation and transformation layer
+- **Admin Interface**: Built-in Django admin for database management
+- **Middleware Stack**: CORS, Security headers, Rate limiting
+- **Gunicorn WSGI**: Production-ready HTTP server
+- **PostgreSQL Integration**: Enterprise-grade database support
+
+### �💼 Core Functionality
 
 - **Multiple Tabs Interface**: Intuitive navigation between Email, SMS, and WhatsApp records
 - **Comprehensive List Views**:
