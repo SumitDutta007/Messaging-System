@@ -14,5 +14,5 @@ python manage.py collectstatic --no-input
 # Run database migrations
 python manage.py migrate
 
-# Create superuser automatically (if it doesn't exist)
-python create_superuser.py
+# Create superuser automatically (using Django management command)
+python manage.py create_default_superuser
